@@ -1,6 +1,6 @@
 #if UNITY_2018_1_OR_NEWER
 using System.IO;
-using UnityEditor.Experimental.AssetImporters;
+using UnityEditor.AssetImporters;
 using UnityEngine;
  
 [ScriptedImporter(1, "cjs")]

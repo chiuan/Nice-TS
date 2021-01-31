@@ -57,21 +57,13 @@ export abstract class UIPanel {
     }
 
     public open(arg:any):void{
-        
         this.onOpen(arg);
-
         FairyGUI.GRoot.inst.AddChild(this.fui);
-
-
     }
 
     public close(arg:any = null):void{
-
-
         this.onClose(arg);
-
         FairyGUI.GRoot.inst.RemoveChild(this.fui);
-
     }
 
     public dispose():void{

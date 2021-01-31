@@ -10,18 +10,14 @@ export class ResManager extends Singleton<ResManager>{
     }
 
     async loadPrefab(address:string){
-
         try{
             let task= NiceTS.ResourceManager.LoadPrefab(address);
             let go = await $promise(task);
             return go;
         }catch(ex){
-
             console.error(`Load prefab :${address} : ${ex}`)
-
             return null;
         }
-
     }
 
     async loadTextAsset(address:string){
@@ -76,7 +72,6 @@ export class ResManager extends Singleton<ResManager>{
     }
 
     public releaseAddressGO(go:any){
-
         NiceTS.ResourceManager.ReleaseAddressGO(go);
     }
 

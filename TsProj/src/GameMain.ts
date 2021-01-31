@@ -1,15 +1,11 @@
-
 import {UnitTest} from './unittest/UnitTest';
 import { GameObjectPool } from './framework/common/GameObjectPool';
 import { UIManager } from './framework/ui/UIManager';
 import { ResManager } from './framework/common/ResManager';
-
 import { JsManager ,GameLaunch, NiceTS } from 'csharp';
 import { SceneDef } from './framework/scene/SceneDef';
 import { SceneManager } from './framework/scene/SceneManager';
 import { StoryManager } from './framework/ink/StoryManager';
-
-
 
 class GameMain{
 
@@ -21,7 +17,7 @@ class GameMain{
     public async start() {
         
         try{
-            console.log("Game start in JS....");
+            console.log("Game start in JS....cc");
 
             //启动单例
             GameObjectPool.Instance(GameObjectPool);
@@ -51,13 +47,11 @@ class GameMain{
     }
 
     public onApplicationQuit():void {
-
         GameObjectPool.Instance(GameObjectPool).cleanup(true);
         console.log("Game onApplicationQuit in JS....");
     }
 
     public onDispose():void {
-        
         console.log("Game onDispose in JS....");
     }
     

@@ -9,11 +9,8 @@ import { UIMessage } from "../../../game/event/UIMessage";
 
 export class  UILoading extends UIPanel{
 
-
     @binder("loading_pregress")
     public progressLoading: FairyGUI.GProgressBar;
-
-
 
     public onAwake(): void {
        

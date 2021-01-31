@@ -17,13 +17,10 @@ export class StoryManager extends Singleton<StoryManager>{
     }
 
     public async initialize(){
-
         if(this._inkWriter == null){
-
             var json =  (await ResManager.Instance(ResManager).loadTextAsset(this.storyAddress)).text;
             this._inkWriter = new InkWriter(json);
         }
-
     }
 
     public beginStory(knotName:string):void{

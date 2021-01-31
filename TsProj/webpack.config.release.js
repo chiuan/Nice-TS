@@ -10,16 +10,14 @@ module.exports = {
 	entry: './src/GameMain.ts',
 	mode: 'production',
 	module: {
-		rules: [
-		{
+		rules: [{
 			test: /\.tsx?$/,
 			use: 'ts-loader',
 			exclude: /node_modules/
-		}
-		]
+		}]
 	},
 	resolve: {
-		extensions: [ '.tsx', '.ts', '.js' ]
+		extensions: ['.tsx', '.ts', '.js']
 	},
 	output: {
 		filename: 'bundle.js',

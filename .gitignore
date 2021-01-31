@@ -9,3 +9,8 @@ ServerData/
 
 TsProj/node_modules/
 FGUIProject/.objs/fonts.json
+/Logs
+/Assets/Puerts/Src/Editor/.idea
+/obj
+.DS_Store
+/.idea

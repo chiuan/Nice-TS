@@ -8,7 +8,6 @@ export class UIMessageManger extends Singleton<UIMessageManger>{
 
 
     public addListener(msgCode:number,obj:any, listener:Function){
-
         this.uiMessage.addListener(msgCode, obj, listener);
     }
 

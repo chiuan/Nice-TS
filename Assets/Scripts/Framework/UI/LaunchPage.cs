@@ -100,7 +100,6 @@ public class LaunchPage : MonoBehaviour
     {
         gTextField.text = "正在进入游戏...";
         JsManager.Instance.StartGame();
-
     }
 
     void UpdateFinish()
